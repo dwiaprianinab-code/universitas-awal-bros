@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Cegah Stunting Sejak 1000 Hari Pertama Kehidupan (1000 HPK)</title>
+    <!-- Google Fonts: Poppins -->
+    <!-- Font eksternal opsional; fallback lokal tetap tersedia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .active-tab {
+            border-bottom: 4px solid #0d9488;
+            color: #0d9488;
+            font-weight: 700;
+            background-color: #f0fdfa;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+        /* Mengatasi masalah scroll horizontal di mobile */
+        body {
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* Sembunyikan scrollbar untuk tab horizontal mobile */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <style>
+/* CSS lokal untuk Cegah Stunting 1000 HPK. Dibangun dari kelas yang digunakan halaman agar tidak bergantung pada Tailwind CDN. */
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{margin:0;overflow-x:hidden;font-family:Poppins,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#1e293b;background:#f8fafc;line-height:1.5}img,svg,video,canvas{max-width:100%;height:auto}button,input,select,textarea{font:inherit;max-width:100%}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit}button{cursor:pointer}nav{width:100%}.active-tab{border-bottom:4px solid #0d9488;color:#0d9488;font-weight:700;background:#f0fdfa}.animate-fade-in{animation:fadeIn .3s ease-out forwards}@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.space-y-1\.5>:not([hidden])~:not([hidden]){margin-top:.375rem}.space-y-2>:not([hidden])~:not([hidden]){margin-top:.5rem}.space-y-2\.5>:not([hidden])~:not([hidden]){margin-top:.625rem}.space-y-3>:not([hidden])~:not([hidden]){margin-top:.75rem}.space-y-3\.5>:not([hidden])~:not([hidden]){margin-top:.875rem}.space-y-4>:not([hidden])~:not([hidden]){margin-top:1rem}.space-y-5>:not([hidden])~:not([hidden]){margin-top:1.25rem}.space-y-6>:not([hidden])~:not([hidden]){margin-top:1.5rem}
+.absolute{position:absolute}
+.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.backdrop-blur-md{backdrop-filter:blur(12px)}
+.bg-amber-100{background-color:#fef3c7}
+.bg-amber-50{background-color:#fffbeb}
+.bg-amber-500{background-color:#f59e0b}
+.bg-blue-100{background-color:#dbeafe}
+.bg-clip-text{-webkit-background-clip:text;background-clip:text}
+.bg-emerald-100{background-color:#d1fae5}
+.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}
+.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}
+.bg-orange-100{background-color:#ffedd5}
+.bg-red-100{background-color:#fee2e2}
+.bg-red-200{background-color:#fecaca}
+.bg-slate-50{background-color:#f8fafc}
+.bg-slate-50\/60{background-color:#f8fafc99}
+.bg-slate-50\/80{background-color:#f8fafccc}
+.bg-slate-900{background-color:#0f172a}
+.bg-teal-100{background-color:#ccfbf1}
+.bg-teal-50{background-color:#f0fdfa}
+.bg-teal-50\/60{background-color:#f0fdfa99}
+.bg-teal-600{background-color:#0d9488}
+.bg-teal-800{background-color:#115e59}
+.bg-teal-900{background-color:#134e4a}
+.bg-white{background-color:#fff}
+.bg-white\/95{background-color:#ffff2}
+.block{display:block}
+.border{border-width:1px;border-style:solid}
+.border-8{border-width:8px}
+.border-amber-300{border-color:#fcd34d}
+.border-emerald-300{border-color:#6ee7b7}
+.border-orange-300{border-color:#fdba74}
+.border-red-300{border-color:#fca5a5}
+.border-red-400{border-color:#f87171}
+.border-slate-100{border-color:#f1f5f9}
+.border-slate-200{border-color:#e2e8f0}
+.border-slate-300{border-color:#cbd5e1}
+.border-slate-800{border-color:#1e293b}
+.border-teal-100{border-color:#ccfbf1}
+.border-teal-200{border-color:#99f6e4}
+.bottom-5{bottom:1.25rem}
+.col-span-2{grid-column:span 2/span 2}
+.cursor-pointer{cursor:pointer}
+.duration-200{transition-duration:200ms}
+.duration-300{transition-duration:300ms}
+.fixed{position:fixed}
+.flex{display:flex}
+.flex-col{flex-direction:column}
+.font-bold{font-weight:700}
+.font-extrabold{font-weight:800}
+.font-medium{font-weight:500}
+.font-sans{font-family:Poppins,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.font-semibold{font-weight:600}
+.from-teal-600{--tw-gradient-from:#0d9488;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+.from-teal-700{--tw-gradient-from:#0f766e;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,transparent)}
+.gap-1{gap:0.25rem}
+.gap-2{gap:0.5rem}
+.gap-2\.5{gap:0.625rem}
+.gap-3{gap:0.75rem}
+.gap-3\.5{gap:0.875rem}
+.gap-4{gap:1rem}
+.gap-5{gap:1.25rem}
+.gap-6{gap:1.5rem}
+.gap-8{gap:2rem}
+.grid{display:grid}
+.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.grid-rows-2{grid-template-rows:repeat(2,minmax(0,1fr))}
+.h-12{height:3rem}
+.h-14{height:3.5rem}
+.h-16{height:4rem}
+.h-4{height:1rem}
+.h-5{height:1.25rem}
+.h-6{height:1.5rem}
+.h-64{height:16rem}
+.h-7{height:1.75rem}
+.hidden{display:none}
+.inline-flex{display:inline-flex}
+.inset-0{inset:0}
+.invisible{visibility:hidden}
+.items-center{align-items:center}
+.items-start{align-items:flex-start}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+.leading-relaxed{line-height:1.625}
+.leading-snug{line-height:1.375}
+.leading-tight{line-height:1.25}
+.list-disc{list-style-type:disc}
+.list-inside{list-style-position:inside}
+.max-w-2xl{max-width:42rem}
+.max-w-3xl{max-width:48rem}
+.max-w-4xl{max-width:56rem}
+.max-w-7xl{max-width:80rem}
+.max-w-sm{max-width:24rem}
+.mb-1{margin-bottom:0.25rem}
+.mb-10{margin-bottom:2.5rem}
+.mb-12{margin-bottom:3rem}
+.mb-2{margin-bottom:0.5rem}
+.mb-3{margin-bottom:0.75rem}
+.mb-5{margin-bottom:1.25rem}
+.mb-6{margin-bottom:1.5rem}
+.mb-8{margin-bottom:2rem}
+.mt-0\.5{margin-top:0.125rem}
+.mt-1{margin-top:0.25rem}
+.mt-2{margin-top:0.5rem}
+.mt-3{margin-top:0.75rem}
+.mt-5{margin-top:1.25rem}
+.mt-6{margin-top:1.5rem}
+.mx-auto{margin-left:auto;margin-right:auto}
+.opacity-0{opacity:0}
+.overflow-hidden{overflow:hidden}
+.overflow-x-auto{overflow-x:auto}
+.p-1\.5{padding:0.375rem}
+.p-2{padding:0.5rem}
+.p-2\.5{padding:0.625rem}
+.p-3{padding:0.75rem}
+.p-3\.5{padding:0.875rem}
+.p-4{padding:1rem}
+.p-5{padding:1.25rem}
+.p-6{padding:1.5rem}
+.pb-14{padding-bottom:3.5rem}
+.pb-20{padding-bottom:5rem}
+.pb-3{padding-bottom:0.75rem}
+.pb-6{padding-bottom:1.5rem}
+.pt-0{padding-top:0}
+.pt-1{padding-top:0.25rem}
+.pt-14{padding-top:3.5rem}
+.pt-2{padding-top:0.5rem}
+.pt-5{padding-top:1.25rem}
+.pt-6{padding-top:1.5rem}
+.pt-8{padding-top:2rem}
+.px-2{padding-left:0.5rem;padding-right:0.5rem}
+.px-3{padding-left:0.75rem;padding-right:0.75rem}
+.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}
+.px-4{padding-left:1rem;padding-right:1rem}
+.px-5{padding-left:1.25rem;padding-right:1.25rem}
+.px-7{padding-left:1.75rem;padding-right:1.75rem}
+.py-1{padding-top:0.25rem;padding-bottom:0.25rem}
+.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}
+.py-14{padding-top:3.5rem;padding-bottom:3.5rem}
+.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}
+.py-3{padding-top:0.75rem;padding-bottom:0.75rem}
+.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}
+.py-4{padding-top:1rem;padding-bottom:1rem}
+.relative{position:relative}
+.right-5{right:1.25rem}
+.rounded{border-radius:0.25rem}
+.rounded-2xl{border-radius:1rem}
+.rounded-3xl{border-radius:1.5rem}
+.rounded-bl-full{border-radius:0 0 0 9999px}
+.rounded-br-full{border-radius:0 0 9999px 0}
+.rounded-full{border-radius:9999px}
+.rounded-lg{border-radius:0.5rem}
+.rounded-t-full{border-radius:9999px 9999px 0 0}
+.rounded-tl-full{border-radius:9999px 0 0 0}
+.rounded-tr-full{border-radius:0 9999px 0 0}
+.rounded-xl{border-radius:0.75rem}
+.scroll-smooth{scroll-behavior:smooth}
+.shadow-2xl{box-shadow:0 25px 50px -12px rgb(0 0 0 / .25)}
+.shadow-inner{box-shadow:inset 0 2px 4px 0 rgb(0 0 0 / .05)}
+.shadow-lg{box-shadow:0 10px 15px -3px rgb(0 0 0 / .1),0 4px 6px -4px rgb(0 0 0 / .1)}
+.shadow-md{box-shadow:0 4px 6px -1px rgb(0 0 0 / .1),0 2px 4px -2px rgb(0 0 0 / .1)}
+.shadow-sm{box-shadow:0 1px 2px 0 rgb(0 0 0 / .05)}
+.shadow-xl{box-shadow:0 20px 25px -5px rgb(0 0 0 / .1),0 8px 10px -6px rgb(0 0 0 / .1)}
+.shrink-0{flex-shrink:0}
+.space-y-1\.5{--space-y:0.375rem}
+.space-y-2{--space-y:0.5rem}
+.space-y-2\.5{--space-y:0.625rem}
+.space-y-3{--space-y:0.75rem}
+.space-y-3\.5{--space-y:0.875rem}
+.space-y-4{--space-y:1rem}
+.space-y-5{--space-y:1.25rem}
+.space-y-6{--space-y:1.5rem}
+.sticky{position:sticky}
+.text-2xl{font-size:1.5rem;line-height:1.5}
+.text-3xl{font-size:1.875rem;line-height:1.5}
+.text-\[10px\]{font-size:10px;line-height:1.5}
+.text-\[11px\]{font-size:11px;line-height:1.5}
+.text-\[9px\]{font-size:9px;line-height:1.5}
+.text-amber-300{color:#fcd34d}
+.text-amber-600{color:#d97706}
+.text-amber-700{color:#b45309}
+.text-amber-800{color:#92400e}
+.text-amber-900{color:#78350f}
+.text-base{font-size:1rem;line-height:1.5}
+.text-blue-600{color:#2563eb}
+.text-blue-700{color:#1d4ed8}
+.text-center{text-align:center}
+.text-emerald-600{color:#059669}
+.text-emerald-700{color:#047857}
+.text-emerald-900{color:#064e3b}
+.text-left{text-align:left}
+.text-lg{font-size:1.125rem;line-height:1.5}
+.text-orange-700{color:#c2410c}
+.text-orange-900{color:#7c2d12}
+.text-red-500{color:#ef4444}
+.text-red-600{color:#dc2626}
+.text-red-700{color:#b91c1c}
+.text-red-800{color:#991b1b}
+.text-red-900{color:#7f1d1d}
+.text-red-950{color:#450a0a}
+.text-slate-300{color:#cbd5e1}
+.text-slate-400{color:#94a3b8}
+.text-slate-500{color:#64748b}
+.text-slate-600{color:#475569}
+.text-slate-700{color:#334155}
+.text-slate-800{color:#1e293b}
+.text-slate-900{color:#0f172a}
+.text-sm{font-size:0.875rem;line-height:1.5}
+.text-teal-100{color:#ccfbf1}
+.text-teal-200{color:#99f6e4}
+.text-teal-50{color:#f0fdfa}
+.text-teal-500{color:#14b8a6}
+.text-teal-600{color:#0d9488}
+.text-teal-700{color:#0f766e}
+.text-teal-800{color:#115e59}
+.text-teal-900{color:#134e4a}
+.text-transparent{color:transparent}
+.text-white{color:#fff}
+.text-xl{font-size:1.25rem;line-height:1.5}
+.text-xs{font-size:0.75rem;line-height:1.5}
+.to-slate-50{--tw-gradient-to:#f8fafc}
+.to-teal-500{--tw-gradient-to:#14b8a6}
+.to-teal-700{--tw-gradient-to:#0f766e}
+.top-0{top:0}
+.tracking-wider{letter-spacing:0.05em}
+.tracking-widest{letter-spacing:0.1em}
+.transition{transition-property:color,background-color,border-color,opacity,box-shadow,transform;transition-duration:150ms}
+.transition-all{transition:all 300ms ease}
+.transition-transform{transition:transform 150ms ease}
+.underline{text-decoration-line:underline}
+.underline-offset-8{text-underline-offset:8px}
+.uppercase{text-transform:uppercase}
+.w-12{width:3rem}
+.w-14{width:3.5rem}
+.w-4{width:1rem}
+.w-5{width:1.25rem}
+.w-6{width:1.5rem}
+.w-64{width:16rem}
+.w-7{width:1.75rem}
+.w-full{width:100%}
+.whitespace-nowrap{white-space:nowrap}
+.z-10{z-index:10}
+.z-40{z-index:40}
+.z-50{z-index:50}
+.hover\:bg-slate-50:hover{background-color:#f8fafc}
+.hover\:bg-teal-50:hover{background-color:#f0fdfa}
+.hover\:shadow-xl:hover{box-shadow:0 20px 25px -5px rgb(0 0 0 / .1),0 8px 10px -6px rgb(0 0 0 / .1)}
+.hover\:text-slate-400:hover{color:#94a3b8}
+.hover\:text-teal-600:hover{color:#0d9488}
+@media (min-width:1024px){.lg\:text-left{text-align:left}}
+@media (min-width:768px){.md\:block{display:block}}
+@media (min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}}
+@media (min-width:768px){.md\:flex{display:flex}}
+@media (min-width:768px){.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:768px){.md\:hidden{display:none}}
+@media (min-width:640px){.sm\:gap-3{gap:0.75rem}}
+@media (min-width:640px){.sm\:gap-8{gap:2rem}}
+@media (min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:640px){.sm\:h-14{height:3.5rem}}
+@media (min-width:640px){.sm\:h-7{height:1.75rem}}
+@media (min-width:640px){.sm\:mb-12{margin-bottom:3rem}}
+@media (min-width:640px){.sm\:p-4{padding:1rem}}
+@media (min-width:640px){.sm\:p-5{padding:1.25rem}}
+@media (min-width:640px){.sm\:p-6{padding:1.5rem}}
+@media (min-width:640px){.sm\:pb-20{padding-bottom:5rem}}
+@media (min-width:640px){.sm\:px-5{padding-left:1.25rem;padding-right:1.25rem}}
+@media (min-width:640px){.sm\:text-2xl{font-size:1.5rem;line-height:1.5}}
+@media (min-width:640px){.sm\:text-3xl{font-size:1.875rem;line-height:1.5}}
+@media (min-width:640px){.sm\:text-base{font-size:1rem;line-height:1.5}}
+@media (min-width:640px){.sm\:text-left{text-align:left}}
+@media (min-width:640px){.sm\:text-lg{font-size:1.125rem;line-height:1.5}}
+@media (min-width:640px){.sm\:text-sm{font-size:0.875rem;line-height:1.5}}
+@media (min-width:640px){.sm\:text-xl{font-size:1.25rem;line-height:1.5}}
+@media (min-width:640px){.sm\:text-xs{font-size:0.75rem;line-height:1.5}}
+@media (min-width:640px){.sm\:w-14{width:3.5rem}}
+@media (min-width:640px){.sm\:w-7{width:1.75rem}}
+/* Mobile-first safeguards */
+@media(max-width:767px){.container,.max-w-7xl{max-width:100%;width:100%}section{max-width:100%}h1{overflow-wrap:anywhere}input,select,textarea{min-width:0}table{max-width:100%} .grid-cols-3,.grid-cols-4,.grid-cols-12{grid-template-columns:minmax(0,1fr)}.fixed{max-width:100vw}}
+@media(min-width:640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:768px){.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(min-width:1024px){.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}}
+
+</style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- NAVIGATION BAR RESPONSIVE -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20">
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-2.5">
+                    <div class="bg-teal-600 text-white p-2 rounded-xl shadow-md shadow-teal-600/20">
+                        <i data-lucide="heart-handshake" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+                    </div>
+                    <div>
+                        <span class="text-base sm:text-xl font-bold bg-gradient-to-r from-teal-700 to-teal-500 bg-clip-text text-transparent block leading-tight">GenerasiSehat</span>
+                        <span class="text-[10px] sm:text-xs text-slate-500 font-medium block">Cegah Stunting 1000 HPK</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                    <a href="#hero" class="hover:text-teal-600 transition">Beranda</a>
+                    <a href="#timeline" class="hover:text-teal-600 transition">Masa 1000 HPK</a>
+                    <a href="#kalkulator" class="hover:text-teal-600 transition">Kalkulator Gizi</a>
+                    <a href="#isi-piringku" class="hover:text-teal-600 transition">Isi Piringku</a>
+                    <a href="#pilar" class="hover:text-teal-600 transition">3 Pilar Utama</a>
+                    <a href="#faq" class="hover:text-teal-600 transition">Mitos vs Fakta</a>
+                </div>
+
+                <!-- CTA Button Header Desktop -->
+                <div class="hidden md:block">
+                    <a href="#kalkulator" class="bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg shadow-teal-600/20 transition duration-200 flex items-center gap-2">
+                        <i data-lucide="calculator" class="w-4 h-4"></i> Cek Risiko & Gizi
+                    </a>
+                </div>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-3 rounded-xl text-slate-700 hover:text-teal-600 hover:bg-teal-50 focus:outline-none transition active:scale-95" aria-label="Buka Menu">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-2 shadow-xl animate-fade-in">
+            <a href="#hero" class="mobile-link block px-4 py-3 rounded-xl text-slate-700 font-semibold text-sm hover:bg-teal-50 hover:text-teal-600 transition">🏠 Beranda Utama</a>
+            <a href="#timeline" class="mobile-link block px-4 py-3 rounded-xl text-slate-700 font-semibold text-sm hover:bg-teal-50 hover:text-teal-600 transition">⏳ Jelajah Fase 1000 HPK</a>
+            <a href="#kalkulator" class="mobile-link block px-4 py-3 rounded-xl text-slate-700 font-semibold text-sm hover:bg-teal-50 hover:text-teal-600 transition">🧮 Kalkulator & Ceklis Gizi</a>
+            <a href="#isi-piringku" class="mobile-link block px-4 py-3 rounded-xl text-slate-700 font-semibold text-sm hover:bg-teal-50 hover:text-teal-600 transition">🍽️ Panduan Isi Piringku</a>
+            <a href="#pilar" class="mobile-link block px-4 py-3 rounded-xl text-slate-700 font-semibold text-sm hover:bg-teal-50 hover:text-teal-600 transition">🛡️ 3 Pilar Pencegahan</a>
+            <a href="#faq" class="mobile-link block px-4 py-3 rounded-xl text-slate-700 font-semibold text-sm hover:bg-teal-50 hover:text-teal-600 transition">❓ Mitos vs Fakta</a>
+            <div class="pt-2">
+                <a href="#kalkulator" class="mobile-link block w-full text-center bg-teal-600 text-white font-bold py-3.5 rounded-xl shadow-md text-sm">Mulai Cek Gizi Sekarang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative overflow-hidden bg-gradient-to-b from-teal-50/70 via-white to-slate-50 pt-8 pb-14 sm:pt-12 sm:pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-5 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-100 text-teal-800 text-xs font-bold uppercase tracking-wider">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-teal-600 shrink-0"></i>
+                        Investasi Emas Masa Depan Anak
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
+                        Cegah <span class="text-teal-600">Stunting</span> Sejak <span class="underline decoration-amber-400 decoration-wavy underline-offset-8">1000 Hari</span> Pertama Kehidupan
+                    </h1>
+                    <p class="text-slate-600 text-sm sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Periode krusial sejak awal kehamilan hingga anak berusia 2 tahun menentukan kualitas fisik, kecerdasan, dan daya tahan tubuh anak. Mari penuhi gizi optimal dari sekarang!
+                    </p>
+                    
+                    <!-- Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                        <a href="#kalkulator" class="w-full sm:w-auto bg-teal-600 hover:bg-teal-700 active:scale-95 text-white font-bold px-7 py-4 rounded-2xl shadow-xl shadow-teal-600/25 transition duration-200 text-center flex items-center justify-center gap-2.5 text-base">
+                            <i data-lucide="stethoscope" class="w-5 h-5"></i>
+                            Cek Panduan & Gizi
+                        </a>
+                        <a href="#timeline" class="w-full sm:w-auto bg-white border border-slate-200 hover:border-teal-500 active:scale-95 text-slate-700 hover:text-teal-600 font-bold px-7 py-4 rounded-2xl shadow-sm hover:shadow transition duration-200 text-center flex items-center justify-center gap-2.5 text-base">
+                            <i data-lucide="compass" class="w-5 h-5"></i>
+                            Jelajah 1000 HPK
+                        </a>
+                    </div>
+
+                    <!-- Quick Statistics Highlights -->
+                    <div class="pt-6 grid grid-cols-3 gap-3 border-t border-slate-200/80 mt-6">
+                        <div class="bg-teal-50/60 p-3 rounded-2xl border border-teal-100">
+                            <p class="text-xl sm:text-3xl font-extrabold text-teal-700">270</p>
+                            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold">Hari Kehamilan</p>
+                        </div>
+                        <div class="bg-teal-50/60 p-3 rounded-2xl border border-teal-100">
+                            <p class="text-xl sm:text-3xl font-extrabold text-teal-700">180</p>
+                            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold">Hari ASI Eksklusif</p>
+                        </div>
+                        <div class="bg-teal-50/60 p-3 rounded-2xl border border-teal-100">
+                            <p class="text-xl sm:text-3xl font-extrabold text-teal-700">550</p>
+                            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold">Hari MPASI Optimal</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-slate-100 space-y-5">
+                        <div class="flex items-center gap-3.5 bg-teal-50 p-4 rounded-2xl border border-teal-100">
+                            <div class="p-3 bg-teal-600 text-white rounded-xl shrink-0">
+                                <i data-lucide="baby" class="w-7 h-7"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-sm sm:text-base">Apa itu Stunting?</h3>
+                                <p class="text-xs text-slate-600 leading-snug">Kondisi gagal tumbuh pada anak akibat kekurangan gizi kronis terutama dalam 1000 HPK.</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Dampak Jika Diabaikan:</h4>
+                            <div class="flex items-start gap-3 bg-slate-50/80 p-3 rounded-xl">
+                                <div class="mt-0.5 bg-red-100 text-red-600 p-1.5 rounded-lg shrink-0">
+                                    <i data-lucide="trending-down" class="w-4 h-4"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-snug">Perkembangan otak terhambat & tingkat kecerdasan tidak optimal.</p>
+                            </div>
+                            <div class="flex items-start gap-3 bg-slate-50/80 p-3 rounded-xl">
+                                <div class="mt-0.5 bg-red-100 text-red-600 p-1.5 rounded-lg shrink-0">
+                                    <i data-lucide="shield-alert" class="w-4 h-4"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-snug">Sistem imun tubuh lemah sehingga anak gampang sakit infeksi.</p>
+                            </div>
+                            <div class="flex items-start gap-3 bg-slate-50/80 p-3 rounded-xl">
+                                <div class="mt-0.5 bg-red-100 text-red-600 p-1.5 rounded-lg shrink-0">
+                                    <i data-lucide="ruler" class="w-4 h-4"></i>
+                                </div>
+                                <p class="text-xs text-slate-600 leading-snug">Tinggi badan anak lebih pendek dibanding anak seusianya.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-teal-600 to-teal-700 p-3.5 rounded-2xl text-white text-center shadow-md">
+                            <p class="text-xs font-semibold leading-snug">"Stunting dapat dicegah sepenuhnya jika ditangani dengan tepat selama 1000 HPK!"</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE TIMELINE (JELAJAH 1000 HPK) -->
+    <section id="timeline" class="py-14 sm:py-20 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+                <span class="text-teal-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Perjalanan Emas</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">Jelajah 3 Fase 1000 HPK</h2>
+                <p class="text-slate-600 mt-2 text-xs sm:text-base px-2">Tap setiap fase di bawah untuk mempelajari intervensi gizi dan perawatan utama pada setiap periode perkembangan.</p>
+            </div>
+
+            <!-- Tab Navigation Buttons -->
+            <div class="flex overflow-x-auto gap-2 pb-3 mb-8 no-scrollbar border-b border-slate-200">
+                <button onclick="switchTab('fase1')" id="btn-fase1" class="active-tab px-4 py-3 text-xs sm:text-sm font-semibold rounded-xl whitespace-nowrap transition flex items-center gap-2 shrink-0 shadow-sm border border-slate-200">
+                    <i data-lucide="heart" class="w-4 h-4 text-teal-600"></i> Fase 1: Kehamilan (270 Hari)
+                </button>
+                <button onclick="switchTab('fase2')" id="btn-fase2" class="px-4 py-3 text-xs sm:text-sm font-semibold text-slate-600 bg-white hover:text-teal-600 rounded-xl whitespace-nowrap transition flex items-center gap-2 shrink-0 shadow-sm border border-slate-200">
+                    <i data-lucide="milk" class="w-4 h-4 text-teal-600"></i> Fase 2: 0 - 6 Bulan (180 Hari)
+                </button>
+                <button onclick="switchTab('fase3')" id="btn-fase3" class="px-4 py-3 text-xs sm:text-sm font-semibold text-slate-600 bg-white hover:text-teal-600 rounded-xl whitespace-nowrap transition flex items-center gap-2 shrink-0 shadow-sm border border-slate-200">
+                    <i data-lucide="apple" class="w-4 h-4 text-teal-600"></i> Fase 3: 6 - 24 Bulan (550 Hari)
+                </button>
+            </div>
+
+            <!-- Tab Content Display -->
+            <div class="bg-slate-50 rounded-3xl p-5 sm:p-10 border border-slate-200/80 shadow-sm">
+                
+                <!-- FASE 1 CONTENT -->
+                <div id="fase1" class="tab-content animate-fade-in space-y-6">
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 space-y-4">
+                            <span class="bg-teal-100 text-teal-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase">Pondasi Awal Perkembangan</span>
+                            <h3 class="text-xl sm:text-3xl font-bold text-slate-800">Masa Dalam Kandungan (270 Hari)</h3>
+                            <p class="text-slate-600 leading-relaxed text-xs sm:text-base">
+                                Kesehatan janin sangat tergantung pada nutrisi yang diterima ibu. Kekurangan gizi pada masa ini berisiko tinggi menyebabkan bayi lahir dengan Berat Badan Lahir Rendah (BBLR) dan berisiko stunting.
+                            </p>
+                            <div class="grid sm:grid-cols-2 gap-3 pt-1">
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="pill" class="w-4 h-4 text-teal-600 shrink-0"></i> Tablet Tambah Darah (TTD)
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Konsumsi minimal 90 tablet selama masa kehamilan untuk mencegah anemia ibu & janin.</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="stethoscope" class="w-4 h-4 text-teal-600 shrink-0"></i> Pemeriksaan ANC Teratur
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Minimal 6 kali periksa ke dokter/bidan (termasuk USG) selama kehamilan.</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="utensils" class="w-4 h-4 text-teal-600 shrink-0"></i> Gizi Protein Hewani
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Porsi makan lebih banyak & kaya protein hewani (ikan, telur, daging, susu).</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="shield-check" class="w-4 h-4 text-teal-600 shrink-0"></i> Gaya Hidup Sehat
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Bebas dari asap rokok, istirahat cukup, dan kelola stres dengan baik.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 flex justify-center">
+                            <div class="bg-teal-600 text-white p-6 sm:p-8 rounded-3xl shadow-xl w-full text-center space-y-4">
+                                <i data-lucide="heart-pulse" class="w-14 h-14 mx-auto text-teal-200"></i>
+                                <h4 class="text-lg sm:text-xl font-bold">Target Utama Fase 1</h4>
+                                <ul class="text-left text-xs sm:text-sm space-y-2.5 text-teal-50">
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Ibu tidak mengalami Anemia</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Berat badan ibu bertambah normal</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Bayi lahir cukup bulan (> 37 minggu)</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Berat lahir normal (≥ 2.500 gram)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 2 CONTENT -->
+                <div id="fase2" class="tab-content hidden animate-fade-in space-y-6">
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 space-y-4">
+                            <span class="bg-teal-100 text-teal-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase">Nutrisi Terbaik Dunia</span>
+                            <h3 class="text-xl sm:text-3xl font-bold text-slate-800">Usia Bayi 0 - 6 Bulan (180 Hari)</h3>
+                            <p class="text-slate-600 leading-relaxed text-xs sm:text-base">
+                                Pada 6 bulan pertama kehidupan, bayi HANYA membutuhkan ASI. Tidak perlu diberikan makanan tambahan atau air putih karena ASI telah mencukupi kebutuhan gizi dan antibodi lengkap.
+                            </p>
+                            <div class="grid sm:grid-cols-2 gap-3 pt-1">
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="zap" class="w-4 h-4 text-teal-600 shrink-0"></i> Inisiasi Menyusu Dini (IMD)
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Proses menyusu 1 jam pertama kelahiran untuk mendapatkan Kolostrum (ASI pertama kaya antibodi).</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="droplet" class="w-4 h-4 text-teal-600 shrink-0"></i> ASI Eksklusif 6 Bulan
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Hanya berikan ASI saja tanpa tambahan cairan atau makanan apapun hingga usia 6 bulan.</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="syringe" class="w-4 h-4 text-teal-600 shrink-0"></i> Imunisasi Dasar Lengkap
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Mendapatkan imunisasi Hepatitis B, BCG, Polio, DPT-HB-Hib sesuai jadwal Posyandu.</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="activity" class="w-4 h-4 text-teal-600 shrink-0"></i> Pemantauan Pertumbuhan
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Penimbangan & pengukuran panjang badan rutin setiap bulan di Posyandu.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 flex justify-center">
+                            <div class="bg-teal-600 text-white p-6 sm:p-8 rounded-3xl shadow-xl w-full text-center space-y-4">
+                                <i data-lucide="award" class="w-14 h-14 mx-auto text-teal-200"></i>
+                                <h4 class="text-lg sm:text-xl font-bold">Keajaiban ASI Eksklusif</h4>
+                                <ul class="text-left text-xs sm:text-sm space-y-2.5 text-teal-50">
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Melindungi dari diare & infeksi saluran napas</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Meningkatkan kecerdasan dan IQ bayi</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Mudah dicerna oleh usus bayi yang rentan</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Mempererat ikatan batin ibu dan anak</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 3 CONTENT -->
+                <div id="fase3" class="tab-content hidden animate-fade-in space-y-6">
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 space-y-4">
+                            <span class="bg-teal-100 text-teal-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase">Transisi Makanan Sehat</span>
+                            <h3 class="text-xl sm:text-3xl font-bold text-slate-800">Usia Anak 6 - 24 Bulan (550 Hari)</h3>
+                            <p class="text-slate-600 leading-relaxed text-xs sm:text-base">
+                                Memasuki usia 6 bulan, kebutuhan energi anak meningkat. Pemberian Makanan Pendamping ASI (MPASI) yang kaya akan **protein hewani** wajib diberikan bersampingan dengan penyusuan ASI hingga 2 tahun.
+                            </p>
+                            <div class="grid sm:grid-cols-2 gap-3 pt-1">
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="drumstick" class="w-4 h-4 text-teal-600 shrink-0"></i> MPASI Protein Hewani
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Utamakan telur, hati ayam, ikan, atau daging untuk mencegah stunting dan anemia.</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="layers" class="w-4 h-4 text-teal-600 shrink-0"></i> Tekstur Sesuai Usia
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Bertahap dari lumat (6 bln), cincang (9 bln), hingga makanan keluarga (12-24 bln).</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="sun" class="w-4 h-4 text-teal-600 shrink-0"></i> Vitamin A & Obat Cacing
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Rutin mengambil kapsul Vitamin A (Feb/Agu) serta obat cacing usia >1 tahun.</p>
+                                </div>
+                                <div class="bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                                    <div class="text-teal-700 font-bold text-xs sm:text-sm flex items-center gap-2 mb-1">
+                                        <i data-lucide="smile" class="w-4 h-4 text-teal-600 shrink-0"></i> Stimulasi Tumbuh Kembang
+                                    </div>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Berikan stimulasi motorik, bicara, dan kasih sayang interaktif setiap hari.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 flex justify-center">
+                            <div class="bg-teal-600 text-white p-6 sm:p-8 rounded-3xl shadow-xl w-full text-center space-y-4">
+                                <i data-lucide="sparkle" class="w-14 h-14 mx-auto text-teal-200"></i>
+                                <h4 class="text-lg sm:text-xl font-bold">Kunci Utama MPASI Sukses</h4>
+                                <ul class="text-left text-xs sm:text-sm space-y-2.5 text-teal-50">
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Tepat Waktu (Mulai usia 6 bulan pas)</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Adekuat (Memenuhi gizi makro & mikro)</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Aman & Higienis dalam penyiapan makanan</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-amber-300 shrink-0"></i> Diberikan secara responsif (Tanpa paksaan)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KALKULATOR GIZI & CEKLIS STUNTING -->
+    <section id="kalkulator" class="py-14 sm:py-20 lg:py-24 bg-teal-900 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+                <span class="bg-teal-800 text-teal-200 text-[11px] sm:text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Fitur Interaktif Lintas Platform</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold mt-3">Kalkulator Gizi & Ceklis Pencegahan Stunting</h2>
+                <p class="text-teal-100 mt-2 text-xs sm:text-base px-2">Pilih kategori status saat ini untuk melihat daftar rekomendasi nutrisi dan aksi penting yang harus dilakukan.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white text-slate-800 rounded-3xl p-5 sm:p-10 shadow-2xl">
+                <div class="grid sm:grid-cols-2 gap-5 mb-6 pb-6 border-b border-slate-200">
+                    <div>
+                        <label class="block text-xs sm:text-sm font-bold text-slate-700 mb-2">Pilih Status Kategori:</label>
+                        <select id="calc-category" onchange="updateCalcForm()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 font-semibold text-slate-800">
+                            <option value="ibu_hamil">Ibu Hamil (Fase Kehamilan)</option>
+                            <option value="bayi_0_6">Bayi Usia 0 - 6 Bulan</option>
+                            <option value="anak_6_24">Anak Usia 6 - 24 Bulan</option>
+                        </select>
+                    </div>
+                    
+                    <div id="calc-sub-field">
+                        <label class="block text-xs sm:text-sm font-bold text-slate-700 mb-2">Usia Kehamilan (Minggu):</label>
+                        <input type="number" id="calc-input-val" value="12" min="1" max="40" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 font-semibold text-slate-800">
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h4 class="text-xs sm:text-sm font-bold text-slate-800 mb-3 flex items-center gap-2">
+                        <i data-lucide="check-square" class="w-5 h-5 text-teal-600 shrink-0"></i> Ceklis Perawatan Yang Sudah Dilakukan:
+                    </h4>
+                    <div id="checklist-container" class="grid sm:grid-cols-2 gap-2.5 text-xs sm:text-sm"></div>
+                </div>
+
+                <button onclick="calculateResults()" class="w-full bg-teal-600 hover:bg-teal-700 active:scale-95 text-white font-bold py-4 rounded-xl shadow-lg transition duration-200 flex items-center justify-center gap-2 text-sm sm:text-base cursor-pointer">
+                    <i data-lucide="search" class="w-5 h-5"></i> Analisis & Tampilkan Rekomendasi Gizi
+                </button>
+
+                <div id="calc-result" class="mt-6 hidden p-5 sm:p-6 bg-teal-50 border border-teal-200 rounded-2xl space-y-4 animate-fade-in">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-teal-600 text-white rounded-xl shrink-0">
+                            <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-teal-900 text-base sm:text-lg">Hasil Rekomendasi Gizi & Aksi</h4>
+                            <p id="res-subtitle" class="text-xs text-teal-700"></p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pt-1">
+                        <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-teal-100 shadow-sm">
+                            <span class="text-[11px] sm:text-xs font-bold text-teal-600 uppercase tracking-wider block mb-1">Kebutuhan Protein & Gizi Harian</span>
+                            <p id="res-gizi" class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed"></p>
+                        </div>
+                        <div class="bg-white p-3.5 sm:p-4 rounded-xl border border-teal-100 shadow-sm">
+                            <span class="text-[11px] sm:text-xs font-bold text-teal-600 uppercase tracking-wider block mb-1">Aksi & Intervensi Prioritas</span>
+                            <ul id="res-aksi" class="text-xs sm:text-sm text-slate-700 list-disc list-inside space-y-1.5 leading-relaxed"></ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU GIZI SEIMBANG & ISI PIRINGKU -->
+    <section id="isi-piringku" class="py-14 sm:py-20 lg:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+                <span class="text-teal-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Panduan Porsi Makan</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">Visualisasi "Isi Piringku"</h2>
+                <p class="text-slate-600 mt-2 text-xs sm:text-base px-2">Panduan porsi gizi seimbang Kemenkes RI. Kunci utama pencegahan stunting ada pada konsumsi **Protein Hewani** yang memadai.</p>
+            </div>
+
+            <div class="flex justify-center gap-2 sm:gap-3 mb-8">
+                <button onclick="switchPlate('hamil')" id="btn-plate-hamil" class="px-4 sm:px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold bg-teal-600 text-white shadow-md transition active:scale-95 cursor-pointer">
+                    Ibu Hamil & Menyusui
+                </button>
+                <button onclick="switchPlate('mpasi')" id="btn-plate-mpasi" class="px-4 sm:px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold bg-white text-slate-600 border border-slate-200 hover:border-teal-500 transition active:scale-95 cursor-pointer">
+                    MPASI Anak (6-24 Bln)
+                </button>
+            </div>
+
+            <div class="bg-white rounded-3xl p-5 sm:p-10 shadow-xl border border-slate-100">
+                <!-- Plate 1 -->
+                <div id="plate-hamil" class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-6 flex justify-center">
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-8 border-slate-100 bg-teal-50 shadow-inner flex flex-col justify-center items-center overflow-hidden p-3">
+                            <div class="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-1 p-2">
+                                <div class="bg-amber-100 border border-amber-300 rounded-tl-full p-3 flex flex-col items-center justify-center text-center">
+                                    <i data-lucide="wheat" class="w-5 h-5 text-amber-700 mb-1"></i>
+                                    <span class="text-[11px] sm:text-xs font-bold text-amber-900">Makanan Pokok</span>
+                                    <span class="text-[9px] text-amber-700">1/3 Piring</span>
+                                </div>
+                                <div class="bg-emerald-100 border border-emerald-300 rounded-tr-full p-3 flex flex-col items-center justify-center text-center">
+                                    <i data-lucide="salad" class="w-5 h-5 text-emerald-700 mb-1"></i>
+                                    <span class="text-[11px] sm:text-xs font-bold text-emerald-900">Sayuran</span>
+                                    <span class="text-[9px] text-emerald-700">1/3 Piring</span>
+                                </div>
+                                <div class="bg-red-100 border border-red-300 rounded-bl-full p-3 flex flex-col items-center justify-center text-center">
+                                    <i data-lucide="egg" class="w-5 h-5 text-red-700 mb-1"></i>
+                                    <span class="text-[11px] sm:text-xs font-bold text-red-900">Lauk Pauk</span>
+                                    <span class="text-[9px] text-red-700">1/6 Piring (Protein)</span>
+                                </div>
+                                <div class="bg-orange-100 border border-orange-300 rounded-br-full p-3 flex flex-col items-center justify-center text-center">
+                                    <i data-lucide="apple" class="w-5 h-5 text-orange-700 mb-1"></i>
+                                    <span class="text-[11px] sm:text-xs font-bold text-orange-900">Buah-Buahan</span>
+                                    <span class="text-[9px] text-orange-700">1/6 Piring</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 space-y-4">
+                        <span class="bg-teal-100 text-teal-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase">Nutrisi Ibu Hamil & Menyusui</span>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-800">Porsi Seimbang Setiap Hari</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Ibu hamil butuh tambahan energi sekitar +300 kalori/hari. Utamakan asupan **Protein Hewani** untuk pembentukan organ janin serta mencegah anemia.
+                        </p>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 bg-slate-50 p-3.5 rounded-2xl border border-slate-100">
+                                <div class="p-2 bg-teal-600 text-white rounded-xl shrink-0">
+                                    <i data-lucide="fish" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-800">Sumber Protein Hewani Rekomendasi</h4>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Ikan laut/tawar, telur dada/rebus (1-2 butir/hari), hati ayam, daging sapi, dan ayam.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3 bg-slate-50 p-3.5 rounded-2xl border border-slate-100">
+                                <div class="p-2 bg-teal-600 text-white rounded-xl shrink-0">
+                                    <i data-lucide="glass-water" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-800">Cairan & Suplementasi</h4>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Minum air putih 8-12 gelas per hari & konsumsi 1 Tablet Tambah Darah (TTD) setiap malam.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plate 2 -->
+                <div id="plate-mpasi" class="grid lg:grid-cols-12 gap-8 items-center hidden">
+                    <div class="lg:col-span-6 flex justify-center">
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-8 border-teal-100 bg-amber-50 shadow-inner flex flex-col justify-center items-center overflow-hidden p-3">
+                            <div class="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-1 p-2">
+                                <div class="bg-red-200 border border-red-400 col-span-2 p-3 flex flex-col items-center justify-center text-center rounded-t-full">
+                                    <i data-lucide="drumstick" class="w-6 h-6 text-red-800 mb-1"></i>
+                                    <span class="text-xs sm:text-sm font-extrabold text-red-950">UTAMA: Protein Hewani (35%)</span>
+                                    <span class="text-[10px] text-red-800">Telur, Ikan, Hati Ayam, Daging</span>
+                                </div>
+                                <div class="bg-amber-100 border border-amber-300 rounded-bl-full p-3 flex flex-col items-center justify-center text-center">
+                                    <i data-lucide="wheat" class="w-4 h-4 text-amber-700 mb-1"></i>
+                                    <span class="text-[11px] sm:text-xs font-bold text-amber-900">Karbohidrat (35%)</span>
+                                </div>
+                                <div class="bg-emerald-100 border border-emerald-300 rounded-br-full p-3 flex flex-col items-center justify-center text-center">
+                                    <i data-lucide="leaf" class="w-4 h-4 text-emerald-700 mb-1"></i>
+                                    <span class="text-[11px] sm:text-xs font-bold text-emerald-900">Sayur & Lemak (30%)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 space-y-4">
+                        <span class="bg-amber-100 text-amber-800 text-[11px] font-bold px-3 py-1 rounded-full uppercase">Penting! MPASI Kaya Protein</span>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-800">Isi Piringku MPASI Anak</h3>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                            Komposisi MPASI anak berbeda dengan makanan orang dewasa. Anak butuh **kepadatan energi dan protein tinggi** untuk pertumbuhan fisik dan otak secara efisien.
+                        </p>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 bg-slate-50 p-3.5 rounded-2xl border border-slate-100">
+                                <div class="p-2 bg-amber-500 text-white rounded-xl shrink-0">
+                                    <i data-lucide="egg" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-800">Keajaiban Telur & Hati Ayam</h4>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">1 butir telur per hari terbukti secara ilmiah menekan risiko stunting secara signifikan!</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3 bg-slate-50 p-3.5 rounded-2xl border border-slate-100">
+                                <div class="p-2 bg-amber-500 text-white rounded-xl shrink-0">
+                                    <i data-lucide="flame" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs sm:text-sm font-bold text-slate-800">Tambahkan Lemak Tambahan</h4>
+                                    <p class="text-[11px] sm:text-xs text-slate-500 leading-relaxed">Tambahkan sedikit minyak, santan, atau mentega pada makanan anak untuk penambah kalori sehat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PILAR UTAMA PENCEGAHAN STUNTING -->
+    <section id="pilar" class="py-14 sm:py-20 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+                <span class="text-teal-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Kerangka Pencegahan</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">3 Pilar Utama Pencegahan Stunting</h2>
+                <p class="text-slate-600 mt-2 text-xs sm:text-base px-2">Pencegahan stunting mencakup pendekatan menyeluruh pada tiga aspek utama berikut:</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Pilar 1 -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200/80 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-5">
+                            <i data-lucide="utensils-crossed" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+                        </div>
+                        <span class="text-[11px] sm:text-xs font-bold text-teal-600 uppercase tracking-widest">Pilar 1</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-1 mb-3">Pola Makan (Gizi Seimbang)</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Pemenuhan gizi seimbang yang kaya akan **protein hewani** (telur, ikan, daging), zat besi, dan zinc sejak masa kehamilan hingga anak usia 2 tahun.
+                        </p>
+                    </div>
+                    <ul class="mt-5 pt-5 border-t border-slate-200 text-xs text-slate-500 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600 shrink-0"></i> Konsumsi TTD Ibu Hamil</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600 shrink-0"></i> ASI Eksklusif 0-6 Bulan</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-teal-600 shrink-0"></i> MPASI Kaya Protein Hewani</li>
+                    </ul>
+                </div>
+
+                <!-- Pilar 2 -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200/80 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center mb-5">
+                            <i data-lucide="heart-handshake" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+                        </div>
+                        <span class="text-[11px] sm:text-xs font-bold text-amber-600 uppercase tracking-widest">Pilar 2</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-1 mb-3">Pola Asuh Kasih Sayang</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Pemberian pengasuhan yang tepat, imunisasi dasar lengkap untuk mencegah infeksi penyakit, pemantauan rutin di Posyandu, serta stimulasi psikososial.
+                        </p>
+                    </div>
+                    <ul class="mt-5 pt-5 border-t border-slate-200 text-xs text-slate-500 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Imunisasi Dasar Lengkap</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Datang Rutin ke Posyandu</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600 shrink-0"></i> Stimulasi Tumbuh Kembang</li>
+                    </ul>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200/80 hover:shadow-xl transition duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-5">
+                            <i data-lucide="shower-head" class="w-6 h-6 sm:w-7 sm:h-7"></i>
+                        </div>
+                        <span class="text-[11px] sm:text-xs font-bold text-blue-600 uppercase tracking-widest">Pilar 3</span>
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-1 mb-3">Sanitasi & Air Bersih</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            Kebersihan lingkungan, penggunaan air bersih, serta pembiasaan Cuci Tangan Pakai Sabun (CTPS) untuk mencegah kecacingan dan infeksi diare.
+                        </p>
+                    </div>
+                    <ul class="mt-5 pt-5 border-t border-slate-200 text-xs text-slate-500 space-y-2">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i> Cuci Tangan Pakai Sabun (CTPS)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i> Gunakan Jamban Sehat</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600 shrink-0"></i> Konsumsi Air Bersih Minum</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & MITOS VS FAKTA -->
+    <section id="faq" class="py-14 sm:py-20 lg:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+                <span class="text-teal-600 font-bold text-xs sm:text-sm tracking-widest uppercase">Edukasi Kesehatan</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2">Mitos vs Fakta Seputar Stunting</h2>
+                <p class="text-slate-600 mt-2 text-xs sm:text-base px-2">Pahami fakta medis yang benar agar tidak keliru dalam memberikan penanganan nutrisi bagi si kecil.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-3.5">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq1')" class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition cursor-pointer">
+                        <span class="flex items-center gap-2.5 text-xs sm:text-base">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-teal-600 shrink-0"></i>
+                            Apakah Stunting Sama Dengan Kerdil Karena Genetik / Keturunan?
+                        </span>
+                        <i id="icon-faq1" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+                    </button>
+                    <div id="faq1" class="hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/60 space-y-2">
+                        <p><strong class="text-red-500">MITOS:</strong> Anak pendek pasti karena keturunan orang tuanya yang pendek.</p>
+                        <p><strong class="text-emerald-600">FAKTA:</strong> Genetik hanya berpengaruh sekitar 10-15%. Penyebab utama stunting adalah kekurangan gizi kronis dan infeksi berulang selama 1000 HPK. Anak dengan genetik orang tua pendek tetap bisa tumbuh optimal jika nutrisi terpenuhi!</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq2')" class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition cursor-pointer">
+                        <span class="flex items-center gap-2.5 text-xs sm:text-base">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-teal-600 shrink-0"></i>
+                            Benarkah Bayi di Bawah 6 Bulan Boleh Diberi Air Putih atau Pisang?
+                        </span>
+                        <i id="icon-faq2" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+                    </button>
+                    <div id="faq2" class="hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/60 space-y-2">
+                        <p><strong class="text-red-500">MITOS:</strong> Bayi menangis terus berarti lapar dan perlu diberi makanan padat/air putih.</p>
+                        <p><strong class="text-emerald-600">FAKTA:</strong> Pencernaan bayi 0-6 bulan belum siap menerima makanan atau cairan selain ASI. Diberikan air putih atau pisang terlalu dini berisiko merusak usus dan menyebabkan diare berat.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq3')" class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition cursor-pointer">
+                        <span class="flex items-center gap-2.5 text-xs sm:text-base">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-teal-600 shrink-0"></i>
+                            Apakah Telur & Ikan Bisa Menyebabkan Anak Cacingan / Bisulan?
+                        </span>
+                        <i id="icon-faq3" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+                    </button>
+                    <div id="faq3" class="hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/60 space-y-2">
+                        <p><strong class="text-red-500">MITOS:</strong> Anak kecil tidak boleh makan ikan atau telur banyak nanti bisulan.</p>
+                        <p><strong class="text-emerald-600">FAKTA:</strong> Telur dan ikan adalah sumber Protein Hewani paling murah dan kaya asam amino untuk otak. Bisulan disebabkan oleh infeksi bakteri akibat lingkungan tidak bersih, bukan karena makan telur/ikan.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq('faq4')" class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition cursor-pointer">
+                        <span class="flex items-center gap-2.5 text-xs sm:text-base">
+                            <i data-lucide="help-circle" class="w-5 h-5 text-teal-600 shrink-0"></i>
+                            Apakah Stunting Masih Bisa Diperbaiki Setelah Anak Berusia 2 Tahun?
+                        </span>
+                        <i id="icon-faq4" data-lucide="chevron-down" class="w-5 h-5 text-slate-400 transition-transform shrink-0"></i>
+                    </button>
+                    <div id="faq4" class="hidden p-4 sm:p-5 pt-0 text-xs sm:text-sm text-slate-600 border-t border-slate-100 bg-slate-50/60 space-y-2">
+                        <p><strong class="text-red-500">MITOS:</strong> Stunting bisa disembuhkan kapan saja saat anak beranjak remaja.</p>
+                        <p><strong class="text-emerald-600">FAKTA:</strong> Efek stunting pada perkembangan otak bersifat Permanen setelah melewati usia 2 tahun. Oleh karena itu, 1000 Hari Pertama Kehidupan dinamakan **Masa Keemasan (Golden Period)** yang tak bisa diulang!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-slate-900 text-slate-300 pt-14 pb-20 sm:pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+                <div class="space-y-3 md:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-teal-600 text-white p-2.5 rounded-xl">
+                            <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white">GenerasiSehat Indonesia</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm">
+                        Platform edukasi interaktif promosi kesehatan masyarakat untuk mewujudkan generasi bebas stunting melalui pemenuhan gizi optimal pada 1000 Hari Pertama Kehidupan.
+                    </p>
+                </div>
+
+                <div class="space-y-2.5">
+                    <h4 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Tautan Cepat</h4>
+                    <ul class="text-xs sm:text-sm space-y-2 text-slate-400">
+                        <li><a href="#hero" class="hover:text-teal-400 transition">Beranda Utama</a></li>
+                        <li><a href="#timeline" class="hover:text-teal-400 transition">Fase 1000 HPK</a></li>
+                        <li><a href="#kalkulator" class="hover:text-teal-400 transition">Kalkulator Gizi</a></li>
+                        <li><a href="#isi-piringku" class="hover:text-teal-400 transition">Panduan Isi Piringku</a></li>
+                        <li><a href="#faq" class="hover:text-teal-400 transition">Mitos vs Fakta</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-2.5">
+                    <h4 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">Layanan Kesehatan</h4>
+                    <p class="text-xs text-slate-400">Konsultasikan tumbuh kembang anak Anda ke fasilitas terdekat:</p>
+                    <div class="space-y-2 text-xs text-slate-300">
+                        <p class="flex items-center gap-2"><i data-lucide="building-2" class="w-4 h-4 text-teal-500 shrink-0"></i> Puskesmas / Posyandu Terdekat</p>
+                        <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-teal-500 shrink-0"></i> Halo Kemenkes: 1500-567</p>
+                        <p class="flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-teal-500 shrink-0"></i> www.kemkes.go.id</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4 text-center sm:text-left">
+                <p>&copy; 2026 GenerasiSehat Indonesia. Promosi Kesehatan Pencegahan Stunting.</p>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hover:text-slate-400 p-2"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#" class="hover:text-slate-400 p-2"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                    <a href="#" class="hover:text-slate-400 p-2"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP FLOATING BUTTON -->
+    <button id="scroll-top-btn" onclick="scrollToTop()" class="fixed bottom-5 right-5 z-40 bg-teal-600 hover:bg-teal-700 active:scale-95 text-white p-3.5 rounded-full shadow-2xl transition-all duration-300 opacity-0 invisible flex items-center justify-center cursor-pointer" aria-label="Kembali ke atas">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll to Top Button Visibility
+        const scrollTopBtn = document.getElementById('scroll-top-btn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'invisible');
+                scrollTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Timeline Tab Switcher
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+            const tabs = ['fase1', 'fase2', 'fase3'];
+            tabs.forEach(id => {
+                const btn = document.getElementById(`btn-${id}`);
+                btn.classList.remove('active-tab', 'border-teal-600');
+                btn.classList.add('text-slate-600', 'bg-white', 'border-slate-200');
+            });
+
+            document.getElementById(tabId).classList.remove('hidden');
+            const activeBtn = document.getElementById(`btn-${tabId}`);
+            activeBtn.classList.add('active-tab', 'border-teal-600');
+            activeBtn.classList.remove('text-slate-600', 'bg-white', 'border-slate-200');
+        }
+
+        const checklistData = {
+            ibu_hamil: [
+                "Minum 1 Tablet Tambah Darah (TTD) tiap malam",
+                "Pemeriksaan kehamilan (ANC) minimal 6x selama hamil",
+                "Makan porsi lebih banyak dengan lauk protein hewani",
+                "Menggunakan garam beryodium saat memasak",
+                "Bebas dari paparan asap rokok di rumah"
+            ],
+            bayi_0_6: [
+                "Inisiasi Menyusu Dini (IMD) segera setelah lahir",
+                "Hanya memberikan ASI Eksklusif (tanpa air putih/pisang)",
+                "Mendapatkan imunisasi dasar lengkap sesuai jadwal",
+                "Menimbang & mengukur panjang badan bayi tiap bulan di Posyandu",
+                "Ibu menyusui makan gizi seimbang yang cukup"
+            ],
+            anak_6_24: [
+                "Meneruskan pemberian ASI hingga anak berusia 2 tahun",
+                "Memberikan MPASI padat nutrisi kaya protein hewani",
+                "Memberikan 1 butir telur / ikan / hati ayam setiap hari",
+                "Mendapatkan kapsul Vitamin A & Obat Cacing rutin",
+                "Menerapkan cuci tangan dengan sabun sebelum makan"
+            ]
+        };
+
+        function updateCalcForm() {
+            const cat = document.getElementById('calc-category').value;
+            const subField = document.getElementById('calc-sub-field');
+            const container = document.getElementById('checklist-container');
+
+            if (cat === 'ibu_hamil') {
+                subField.innerHTML = `
+                    <label class="block text-xs sm:text-sm font-bold text-slate-700 mb-2">Usia Kehamilan (Minggu):</label>
+                    <input type="number" id="calc-input-val" value="16" min="1" max="40" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 font-semibold text-slate-800">
+                `;
+            } else if (cat === 'bayi_0_6') {
+                subField.innerHTML = `
+                    <label class="block text-xs sm:text-sm font-bold text-slate-700 mb-2">Usia Bayi (Bulan):</label>
+                    <input type="number" id="calc-input-val" value="3" min="0" max="6" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 font-semibold text-slate-800">
+                `;
+            } else {
+                subField.innerHTML = `
+                    <label class="block text-xs sm:text-sm font-bold text-slate-700 mb-2">Usia Anak (Bulan):</label>
+                    <input type="number" id="calc-input-val" value="12" min="6" max="24" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3.5 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-teal-600 font-semibold text-slate-800">
+                `;
+            }
+
+            container.innerHTML = '';
+            checklistData[cat].forEach((item, index) => {
+                const itemHtml = `
+                    <label class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 bg-white cursor-pointer hover:bg-slate-50 active:bg-slate-100">
+                        <input type="checkbox" id="chk-${index}" class="mt-0.5 w-4 h-4 text-teal-600 rounded border-slate-300 focus:ring-teal-500 shrink-0">
+                        <span class="text-slate-700 font-medium text-xs sm:text-sm leading-snug">${item}</span>
+                    </label>
+                `;
+                container.innerHTML += itemHtml;
+            });
+        }
+
+        function calculateResults() {
+            const cat = document.getElementById('calc-category').value;
+            const inputVal = document.getElementById('calc-input-val').value;
+            const resultBox = document.getElementById('calc-result');
+            const subTitle = document.getElementById('res-subtitle');
+            const giziBox = document.getElementById('res-gizi');
+            const aksiBox = document.getElementById('res-aksi');
+
+            resultBox.classList.remove('hidden');
+
+            if (cat === 'ibu_hamil') {
+                subTitle.innerText = `Panduan Untuk Usia Kehamilan ${inputVal} Minggu`;
+                giziBox.innerHTML = `Ibu butuh tambahan kalori <strong>+300 kkal/hari</strong>, Asam Folat (400 mcg), Zat Besi (30 mg), Kalsium, dan minimal 2 porsi Protein Hewani (telur, ikan, daging) per hari.`;
+                aksiBox.innerHTML = `
+                    <li>Pastikan sudah rutin minum Tablet Tambah Darah (TTD) 1x sehari.</li>
+                    <li>Lakukan USG ke dokter/bidan untuk cek denyut jantung & perkembangan janin.</li>
+                    <li>Gunakan garam beryodium dan cukupi cairan air putih 2.5 liter/hari.</li>
+                `;
+            } else if (cat === 'bayi_0_6') {
+                subTitle.innerText = `Panduan Untuk Bayi Usia ${inputVal} Bulan`;
+                giziBox.innerHTML = `<strong>100% Nutrisi berasal dari ASI Eksklusif.</strong> Tidak ada tambahan air putih, susu formula (kecuali indikasi medis), atau makanan padat apapun.`;
+                aksiBox.innerHTML = `
+                    <li>Susui bayi sesering mungkin (minimal 8-12 kali dalam 24 jam).</li>
+                    <li>Pastikan imunisasi bulan ini sudah lengkap sesuai jadwal Posyandu.</li>
+                    <li>Pantau grafik kenaikan berat badan di Buku KIA/KMS secara berkala.</li>
+                `;
+            } else {
+                subTitle.innerText = `Panduan Untuk Anak Usia ${inputVal} Bulan`;
+                giziBox.innerHTML = `Membutuhkan MPASI kaya energi & protein tinggi. Rekomendasi utama: <strong>1 butir telur per hari + porsi ikan/daging</strong>, karbohidrat, serta sedikit lemak tambahan.`;
+                aksiBox.innerHTML = `
+                    <li>Tingkatkan variasi tekstur makanan bertahap sesuai tingkat usianya.</li>
+                    <li>Berikan kapsul Vitamin A merah/biru pada bulan Februari / Agustus di Posyandu.</li>
+                    <li>Terapkan perilaku cuci tangan pakai sabun sebelum menyuapi anak.</li>
+                `;
+            }
+
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function switchPlate(type) {
+            const plateHamil = document.getElementById('plate-hamil');
+            const plateMpasi = document.getElementById('plate-mpasi');
+            const btnHamil = document.getElementById('btn-plate-hamil');
+            const btnMpasi = document.getElementById('btn-plate-mpasi');
+
+            if (type === 'hamil') {
+                plateHamil.classList.remove('hidden');
+                plateMpasi.classList.add('hidden');
+                btnHamil.className = "px-4 sm:px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold bg-teal-600 text-white shadow-md transition active:scale-95 cursor-pointer";
+                btnMpasi.className = "px-4 sm:px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold bg-white text-slate-600 border border-slate-200 hover:border-teal-500 transition active:scale-95 cursor-pointer";
+            } else {
+                plateHamil.classList.add('hidden');
+                plateMpasi.classList.remove('hidden');
+                btnMpasi.className = "px-4 sm:px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold bg-amber-500 text-white shadow-md transition active:scale-95 cursor-pointer";
+                btnHamil.className = "px-4 sm:px-5 py-3 rounded-2xl text-xs sm:text-sm font-bold bg-white text-slate-600 border border-slate-200 hover:border-teal-500 transition active:scale-95 cursor-pointer";
+            }
+        }
+
+        function toggleFaq(id) {
+            const element = document.getElementById(id);
+            const icon = document.getElementById(`icon-${id}`);
+            element.classList.toggle('hidden');
+            if (element.classList.contains('hidden')) {
+                icon.style.transform = "rotate(0deg)";
+            } else {
+                icon.style.transform = "rotate(180deg)";
+            }
+        }
+
+        window.onload = function() {
+            updateCalcForm();
+        };
+    </script>
+</body>
+</html>
